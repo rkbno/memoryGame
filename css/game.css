@@ -1,0 +1,140 @@
+
+html, body {
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+
+main { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../video/projeto.mp4');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 0 20px 0px;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    margin-top: -0.5%;
+}
+
+
+
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 15px;
+    width:100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    background-color: #ccc;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.face { 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 2px solid rgb(179, 28, 28);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center; 
+    transition: all 500ms ease;
+}
+
+.front {
+    
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center; 
+    
+}
+
+.back {
+    background-image:url(../imagens/outras/Rare\ Gallery\ wallpaper.jpeg);
+    backface-visibility: hidden;
+}
+
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+
+}
+
+.bg_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    background: url(../imagens/outras/Rare\ Gallery\ wallpaper.jpeg);
+    background-size: cover;
+    background-position: center;
+    scroll-padding-left: none;
+}
+
+.creatores {
+    margin-top: 20px;
+    max-width: 900px;
+    line-height: 30px;
+}
+
+
+.assist, .developer {
+    text-align: center;
+}
+
+ .creatores:hover {
+    color: aliceblue;
+    transform: scale(1.1);
+}
+
+.link-assist {
+    text-decoration: none;
+    color: black
+}
+
+.link-assist:hover {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
